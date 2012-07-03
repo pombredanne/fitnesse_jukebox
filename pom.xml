@@ -23,33 +23,15 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<!-- plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<configuration>
-				    <mainClass>fitnesseMain.FitNesseMain</mainClass>
-					<arguments>
-              			<argument>-d</argument>
-						<argument>${project.basedir}</argument>
-						<argument>-e</argument>
-						<argument>${fitnesse.runtime.daysToKeepVersions}</argument>
-						<argument>-p</argument>
-                        <argument>${fitnesse.runtime.port}</argument>
-						<argument>-o</argument>
-					</arguments>
-				</configuration>
-			</plugin> -->
-
+  <build>
+    <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2</version>
         <executions>
           <execution>
-            <id>start-fitnesse</id>
+            <id>start-maven</id>
             <goals>
               <goal>exec</goal>
             </goals>
@@ -67,31 +49,8 @@
             <argument>-p</argument><argument>${fitnesse.runtime.port}</argument>
           </arguments>
         </configuration>
+
       </plugin>
-            
-      
-			<plugin>
-				<groupId>org.linuxstuff.maven</groupId>
-				<artifactId>trinidad-maven-plugin</artifactId>
-				<version>20120309</version>
-				<configuration>
-					<testRepositoryUri>${project.basedir}</testRepositoryUri>
-					<breakBuildOnFailure>true</breakBuildOnFailure>
-					<suites>
-						<suite>SelRunner.RegressionTests</suite>
-						<suite>SelRunner.DemoSamples</suite>
-					</suites>
-				</configuration>
-				<executions>
-					<execution>
-						<id>run-tests</id>
-						<phase>integration-test</phase>
-						<goals>
-							<goal>run-tests</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+    </plugins>
+  </build>
 </project>
