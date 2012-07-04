@@ -9,12 +9,6 @@
 	<url>http://testing-software.org</url>
 	<description>Jukebox sample for FitNesse using Maven.</description>
 
-	<properties>
-		<fitnesse.runtime.daysToKeepVersions>0</fitnesse.runtime.daysToKeepVersions>
-		<fitnesse.runtime.port>8080</fitnesse.runtime.port>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.fitnesse</groupId>
@@ -24,33 +18,29 @@
 	</dependencies>
 
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>1.2</version>
-        <executions>
-          <execution>
-            <id>start-maven</id>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
-        </executions>
+      <plugins>
+            <plugin>
+                <groupId>org.linuxstuff.maven</groupId>
+                <artifactId>trinidad-maven-plugin</artifactId>
+                <version>20120309</version>
+                <configuration>
+                    <testRepositoryUri>${project.basedir}</testRepositoryUri>
+                    <breakBuildOnFailure>true</breakBuildOnFailure>
+                    <suites>
+                        <suite>ProjectPage.JukeBox.JukeBoxStories</suite>
+                    </suites>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>run-tests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>run-tests</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
-        <configuration>
-          <executable>java</executable>
-          <arguments>
-            <argument>-classpath</argument>
-            <classpath/>
-            <argument>fitnesseMain.FitNesseMain</argument>
-            <argument>-d</argument><argument>${project.basedir}</argument>
-            <argument>-e</argument><argument>${fitnesse.runtime.daysToKeepVersions}</argument>
-            <argument>-p</argument><argument>${fitnesse.runtime.port}</argument>
-          </arguments>
-        </configuration>
-
-      </plugin>
-    </plugins>
-  </build>
 </project>

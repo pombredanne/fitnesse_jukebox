@@ -1,5 +1,0 @@
-This is the top of the JukeBox project.
-!define TEST_SYSTEM {slim}
-!define SLIM_FLAGS {-v}
-!path /home/mark/devel/fitnesse_jukebox/target/classes/
-!contents -R2 -g -p -f -h

@@ -1,1 +1,7 @@
+ProjectPage setup
+!define TEST_SYSTEM {slim}
+!define SLIM_FLAGS {-v}
+
+!path ${java.class.path}
+
 !contents -R2 -g -p -f -h
