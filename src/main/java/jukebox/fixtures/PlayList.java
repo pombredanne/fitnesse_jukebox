@@ -1,9 +1,7 @@
 package jukebox.fixtures;
 
-import jukebox.Song;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlayList {
   public List<Object> query() {
