@@ -9,10 +9,10 @@ env/
 target/
 test/fitnesse/FitNesseRoot/ErrorLogs/
 test/fitnesse/FitNesseRoot/FitNesse/
-test/fitnesse/FitNesseRoot/PageFooter/
-test/fitnesse/FitNesseRoot/PageHeader/
 test/fitnesse/FitNesseRoot/RecentChanges/
-test/fitnesse/FitNesseRoot/files/
+test/fitnesse/FitNesseRoot/files/testProgress/
+test/fitnesse/FitNesseRoot/files/testResults/
+test/fitnesse/FitNesseRoot/files/testHistory/
 test/fitnesse/FirefoxProfile/
 
 *.*~
