@@ -2,15 +2,15 @@
 <properties>
 	<Edit/>
 	<Files/>
-	<Help/>
+	<Help></Help>
 	<Properties/>
 	<RecentChanges/>
 	<Refactor/>
 	<Search/>
-	<Suites/>
+	<Suites>NIGHTLY</Suites>
 	<Test/>
 	<Versions/>
 	<WhereUsed/>
-	<saveId>1227544917047</saveId>
-	<ticketId>-2620440547026376200</ticketId>
+	<saveId>1227892392752</saveId>
+	<ticketId>-7734933174680141767</ticketId>
 </properties>
