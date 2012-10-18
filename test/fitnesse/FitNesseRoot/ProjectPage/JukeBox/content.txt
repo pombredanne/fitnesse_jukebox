@@ -1,1 +1,13 @@
+!*> Environment settings for testrunner
+
+!define TEST_SYSTEM {slim}
+!define SLIM_FLAGS {-v}
+
+Set the classpath for fitnesse_jukebox
+!path ${java.class.path}
+
+use jukebox DEV workspace so we can make quick changes
+!path /home/mark/devel/fitnesse_jukebox/target/classes
+*!
+
 !contents -R2 -g -p -f -h
