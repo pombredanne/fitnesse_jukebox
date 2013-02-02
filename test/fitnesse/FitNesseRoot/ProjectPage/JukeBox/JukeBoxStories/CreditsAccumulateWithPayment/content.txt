@@ -3,7 +3,7 @@ As you deposit money, your credits accumulate
 |script |Juke Box                |
 |check  |credits|0               |
 |deposit|.25                     |
-|check  |credits|1               |
+|check  |credits|2               |
 |deposit|.25                     |
 |check  |credits|${=1+1=}        |
 |deposit|1.00                    |
