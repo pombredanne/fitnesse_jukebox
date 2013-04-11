@@ -1,13 +1,11 @@
-!1 Welcome to [[FitNesse][FitNesse.FitNesse]]!
-!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+!1 Welcome to FitNesse!
 
-# Here is a good place to add your first page (WikiWord). For example, MyTopLevelApplicationPage
-To add your first "page", click the [[Edit][FrontPage?edit]] button and add a [[!-WikiWord-!][FitNesse.UserGuide.WikiWord]] to the page.
+|Projets                                                              |
+|[[SelRunner][SelRunner]]|Testsuite of the SelRunner Selenium bridge  |
+|[[SuperCars][SuperCars]]|Testsuite of the ajaxdemo sample application|
+|[[JukeBox][JukeBox]]    |Testsuite of the jukebox tutorial           |
 
-| '''To Learn More...'''|
-| [[A One-Minute Description][FitNesse.UserGuide.OneMinuteDescription]]|''What is [[FitNesse][FitNesse.FitNesse]]? Start here.''|
-| [[A Two-Minute Example][FitNesse.UserGuide.TwoMinuteExample]]|''A brief example. Read this one next.''|
-| [[User Guide][FitNesse.UserGuide]]|''Answer the rest of your questions here.''|
-| [[Acceptance Tests][FitNesse.SuiteAcceptanceTests]]|''FitNesse's suite of Acceptance Tests''|
-
-!note Release v20111024
+|Documentation                                                                                                                 |
+|[[!-SelRunner-!][http://files/javadoc/SelRunner/index.html]]|Javadoc API documentation of the SelRunner Selenium bridge       |
+|[[!-UserGuide-!][FitNesse.UserGuide]]                       |FitNesse user guide                                              |
+|[[!-Slim UserGuide-!][FitNesse.UserGuide.SliM]]             |Regarding Slim the most useful part of the FitNesse documentation|
